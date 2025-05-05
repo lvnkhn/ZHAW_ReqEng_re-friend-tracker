@@ -85,6 +85,13 @@
                         "required": true
                     },
                     {
+                        "id": "comment",
+                        "type": "text",
+                        "name": "LocationComment",
+                        "width": 2,
+                        "required": true
+                    },
+                    {
                         "type": "deleteButton",
                         "name": "Delete"
                     },
@@ -99,7 +106,7 @@
                 ]
             },
             {
-                "id": "AddActivityForm",
+                "id": "ActivityForm",
                 "title": "Activity",
                 "url": "/friend/:friendKey/activity",
                 "formFieldList": [
@@ -112,6 +119,27 @@
                         "readonly": true,
                         "form": "ActivityForm",
                         "width": 2
+                    },
+                    {
+                        "id": "name",
+                        "type": "text",
+                        "name": "Name",
+                        "width": 2,
+                        "required": true
+                    },
+                    {
+                        "id": "date",
+                        "type": "text",
+                        "name": "Date",
+                        "width": 2,
+                        "required": true
+                    },
+                    {
+                        "id": "comment",
+                        "type": "text",
+                        "name": "Comment",
+                        "width": 2,
+                        "required": true
                     },
                     {
                         "type": "deleteButton",
@@ -136,6 +164,20 @@
                         "id": "name",
                         "type": "text",
                         "name": "GroupName",
+                        "width": 2,
+                        "required": true
+                    },
+                    {
+                        "id": "groupcomment",
+                        "type": "text",
+                        "name": "Comment",
+                        "width": 2,
+                        "required": true
+                    },
+                    {
+                        "id": "creationDate",
+                        "type": "text",
+                        "name": "CreationDate",
                         "width": 2,
                         "required": true
                     },
@@ -179,6 +221,13 @@
                         "icon": "fa-weixin",
                         "color": "wisteria",
                         "page": "groupspage"
+                    }
+                    ,{
+                        "type": "button",
+                        "name": "Activity",
+                        "icon": "fa-weixin",
+                        "color": "wisteria",
+                        "page": "activitypage"
                     }
                 ]
             },
@@ -260,6 +309,33 @@
                         "url": "/group",
                         "form": {
                         "form": "GroupForm"
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "activitypage",
+                "elementList": [
+                {
+                    "type": "backbutton"
+                },
+                    {
+                        "type": "newButton",
+                        "name": "NewActivity",
+                        "icon": "fa-weixin",
+                        "color": "green",
+                        "form": {
+                            "form": "ActivityForm"
+                        }
+                    },
+                    {
+                        "type": "list",
+                        "icon": "fa-weixin",
+                        "color": "wisteria",
+                        "search": true,
+                        "url": "/activity",
+                        "form": {
+                        "form": "ActivityForm"
                         }
                     }
                 ]
