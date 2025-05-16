@@ -1,6 +1,6 @@
 {
     "application": {
-        "title": "Levin Kuhn, Lorenzo Salce - Requirements Engineering Friend Tracker (FS2025)",
+        "title": "Levin Kuhn, Lorenzo Salce, Luis Arenillas - Requirements Engineering Friend Tracker (FS2025)",
         "formList": [
             {
                 "id": "FriendForm",
